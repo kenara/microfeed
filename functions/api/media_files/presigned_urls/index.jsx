@@ -26,10 +26,10 @@ export async function onRequestPost(context) {
       'image, audio, video, and document';
   } else {
     const {category, full_local_file_path, item_id} = jsonInputParams;
-    if (!['image', 'audio', 'video', 'document', 'map',].includes(category)) {
+    if (!['image', 'audio', 'video', 'document', 'map', 'card',].includes(category)) {
       status = 400;
       error = `Invalid category: ${category}. ` +
-          'Category must be one of: image, audio, video, document, map';
+          'Category must be one of: image, audio, video, document, map, card';
     } else if (!full_local_file_path) {
       status = 400;
       error = 'You have to provide full_local_file_path, e.g., /tmp/1.png';
