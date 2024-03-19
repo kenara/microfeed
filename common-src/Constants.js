@@ -141,6 +141,7 @@ export const ENCLOSURE_CATEGORIES = {
   IMAGE: 'image',
   EXTERNAL_URL: 'external_url',
   MAP: 'map',
+  CARD: 'card',
 };
 export const ENCLOSURE_CATEGORIES_DICT = {
   [ENCLOSURE_CATEGORIES.AUDIO]: {
@@ -167,6 +168,10 @@ export const ENCLOSURE_CATEGORIES_DICT = {
     name: 'map',
     fileTypes: ['png', 'jpg', 'jpeg', 'gif', 'heic', 'cr2'],
   },
+  [ENCLOSURE_CATEGORIES.CARD]: {
+    name: 'card',
+    fileTypes: ['png', 'jpg', 'jpeg', 'gif', 'heic', 'cr2'],
+  },
   
 };
 
@@ -177,6 +182,7 @@ export const SUPPORTED_ENCLOSURE_CATEGORIES = [
   ENCLOSURE_CATEGORIES.IMAGE,
   ENCLOSURE_CATEGORIES.EXTERNAL_URL,
   ENCLOSURE_CATEGORIES.MAP,  
+  ENCLOSURE_CATEGORIES.CARD,  
 ];
 
 export const NAV_ITEMS = {
